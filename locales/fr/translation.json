@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "À PROPOS",
+    "skills": "COMPÉTENCES",
+    "projects": "PROJETS",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "header": {
+    "name": "Grégoire Legrand",
+    "title": "Mon Portfolio",
+    "subtitle": "Développeur Backend"
+  },
+  "about": {
+    "title": "A PROPOS",
+    "p1_start": "Bonjour, je m'appelle Grégoire Legrand et j'ai ",
+    "p1_end": " ans. Je suis actuellement en première année de cycle ingénieur informatique à l'INSA Haut de France.",
+    "p2": "Mon objectif est de devenir développeur web et j'ai hâte de me lancer dans cette carrière passionnante. J'aime apprendre de nouvelles technologies. Je suis capable de travailler efficacement en équipe.",
+    "p3": "Je suis impatient de développer mes compétences en tant que développeur web et de créer des choses qui seront utilisées par des millions de personnes à travers le monde."
+  },
+  "skills": {
+    "title": "COMPÉTENCES",
+    "laravel": "Laravel",
+    "symfony": "Symfony",
+    "wordpress": "Wordpress",
+    "bootstrap": "BOOSTRAP",
+    "react": "React",
+    "java": "JAVA",
+    "vue": "Vue",
+    "angular": "Angular",
+    "node": "Node"
+  },
+  "projects": {
+    "title": "MES PROJETS",
+    "school_projects": "Projets réalisés pour les études",
+    "fractals": {
+      "title": "Projet Fractales",
+      "description": "Pour ce projet de groupe, le but est de realiser des images complexes a l'aide d'algorithme créant une image infini."
+    },
+    "space_invader": {
+      "title": "Projet Space Invader",
+      "description": "Dans ce projet effectué en groupe, nous avons recréer le jeu du space invader"
+    },
+    "pokemon": {
+      "title": "Projet Pokémon",
+      "description": "Ce projet a était fait afin de voir et comprendre les bases du framework laravel"
+    },
+    "ludotech": {
+      "title": "Projet Ludo-tech",
+      "description": "Ce projet a était réalisés dans le but de pouvoir affiché et présenter aux utilisateurs une liste de jeux avec beaucoup de fontionnalités"
+    },
+    "personal_projects": "Projets personnel",
+    "angular_project": {
+      "title": "Projet angular",
+      "description": "Ce projet fait avec la doc Angular a pour but d'apprendre les bases du framework"
+    },
+    "cake_project": {
+      "title": "Projet site de gateaux",
+      "description": "Ce projet est la création d'un site de gateaux ou toutes les recettes patissières connus y seront notés. (Ce projet est toujours en cours.)"
+    },
+    "gelkrem_project": {
+      "title": "Projet Gelkrem",
+      "description": "Le but de ce projet est de proposer une refonte du site Gelkrem avec plusieurs fonctionnalités en plus. (Ce projet est encore en cours.)"
+    },
+    "todo_list": {
+      "title": "TODO liste",
+      "description": "Le projet présente une simple Todo liste où il est possible de créer,supprimer,modifier une tâche."
+    },
+    "skinvoice": {
+      "title": "Appplication de Facturation(Skinvoice)",
+      "description": "Le projet vise à pouvoir faciliter et gérer les factures d'une entreprise en automatisant un maximum les étapes requises. (Projet en cours)"
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "stage3": {
+      "title": "Stage de troisième année",
+      "company": "ProWeb Solutions, Carvin, France",
+      "p1": "Ce stage intervient pour ma troisième année de BUT Informatique.",
+      "p2": "Durant cette période de 3 mois, j'ai travaillé avec WordPress, élaboré des scripts Bash, et configuré Nginx pour les déploiements.",
+      "tech_title": "Technologies",
+      "tech_desc": "J'ai utilisé WordPress pour créer et gérer du contenu, élaboré des scripts Bash pour automatiser certaines tâches, et configuré Nginx pour des déploiements efficaces.",
+      "benefits_title": "Bénéfices",
+      "benefits_desc": "J'ai pu apprendre WordPress en profondeur et améliorer mes compétences en script Bash. Ce stage m'a également permis de mieux comprendre la gestion de serveurs et les processus de déploiement avec Nginx."
+    },
+    "stage2": {
+      "title": "Stage de deuxième année",
+      "company": "Waigéo, Bruay-la-buissière, France",
+      "p1": "Ce stage intervient pour ma deuxième année de BUT Informatique.",
+      "p2": "Durant cette période de 2 mois, j'ai mis en place diverses fonctionnalités aussi bien du côté serveur que côté client sur une application interne à l'entreprise.",
+      "tech_title": "Technologies",
+      "tech_desc": "Les langages utilisés étaient principalement VueJS pour le côté client et NodeJS pour le côté serveur. J'ai aussi eu l'occasion de travailler sur un projet JavaScript avec notamment des requêtes JQuery.",
+      "benefits_title": "Bénéfices",
+      "benefits_desc": "Grâce à ce stage, j'ai eu l'occasion d'apprendre les langages VueJS et NodeJS en plus de développer mes compétences dans ces mêmes langages. J'ai également développé des compétences humaines en apprenant la vie en entreprise dans le monde de la tech."
+    },
+    "handler": {
+      "title": "Manutentionnaire",
+      "company": "Gelkrem, Loison-sous-Lens, France",
+      "p1": "Le travail à la chaîne de glace consiste à travailler sur une chaîne de production de glace.",
+      "p2": "Vous pouvez être chargé de surveiller et de contrôler le fonctionnement de la machine, de vérifier la qualité de la glace produite, de charger et de décharger les matières premières, de nettoyer et d'entretenir la machine, et de respecter les règles de sécurité alimentaire.",
+      "conditions_title": "Conditions",
+      "conditions_desc": "Le travail à la chaîne de glace peut être physique et exiger de rester debout pendant de longues périodes. Il peut également être nécessaire de travailler en horaires décalés et les week-ends, en fonction de l'entreprise pour laquelle vous travaillez. La capacité à travailler en équipe et à respecter les consignes de sécurité est également importante.",
+      "benefits_title": "Bénéfices",
+      "benefits_desc": "J'ai appris à être rigoureux et à dépasser mes limites grâce aux conditions de travail exigeantes de ce métier. J'ai également développé des compétences en matière de concentration et de travail sous pression, ce qui m'a été utile dans d'autres aspects de ma vie."
+    }
+  },
+  "footer": {
+    "home": "Home",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "projets",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "cv_fr": "Télécharger mon CV",
+    "cv_en": "Télécharger mon CV en anglais",
+    "copyright": "All rights reserved - Grégoire Legrand"
+  }
+}
+

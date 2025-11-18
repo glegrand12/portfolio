@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "ABOUT",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "header": {
+    "name": "Grégoire Legrand",
+    "title": "My Portfolio",
+    "subtitle": "Backend Developer"
+  },
+  "about": {
+    "title": "ABOUT",
+    "p1_start": "Hello, my name is Grégoire Legrand and I am ",
+    "p1_end": " years old. I am currently in the first year of an engineering cycle in computer science at INSA Haut de France.",
+    "p2": "My goal is to become a web developer and I can't wait to embark on this exciting career. I like to learn new technologies. I am able to work effectively in a team.",
+    "p3": "I look forward to developing my skills as a web developer and creating things that will be used by millions of people around the world."
+  },
+  "skills": {
+    "title": "SKILLS",
+    "laravel": "Laravel",
+    "symfony": "Symfony",
+    "wordpress": "Wordpress",
+    "bootstrap": "BOOSTRAP",
+    "react": "React",
+    "java": "JAVA",
+    "vue": "Vue",
+    "angular": "Angular",
+    "node": "Node"
+  },
+  "projects": {
+    "title": "MY PROJECTS",
+    "school_projects": "Projects carried out for studies",
+    "fractals": {
+      "title": "Fractals Project",
+      "description": "For this group project, the goal is to create complex images using an algorithm that creates an infinite image."
+    },
+    "space_invader": {
+      "title": "Space Invader Project",
+      "description": "In this group project, we recreated the space invader game"
+    },
+    "pokemon": {
+      "title": "Pokémon Project",
+      "description": "This project was made to see and understand the basics of the laravel framework"
+    },
+    "ludotech": {
+      "title": "Ludo-tech Project",
+      "description": "This project was carried out in order to be able to display and present to users a list of games with many features"
+    },
+    "personal_projects": "Personal projects",
+    "angular_project": {
+      "title": "Angular project",
+      "description": "This project made with the Angular doc aims to learn the basics of the framework"
+    },
+    "cake_project": {
+      "title": "Cake site project",
+      "description": "This project is the creation of a cake site where all known pastry recipes will be noted. (This project is still in progress.)"
+    },
+    "gelkrem_project": {
+      "title": "Gelkrem project",
+      "description": "The goal of this project is to offer a redesign of the Gelkrem site with several additional features. (This project is still in progress.)"
+    },
+    "todo_list": {
+      "title": "TODO list",
+      "description": "The project presents a simple Todo list where it is possible to create, delete, modify a task."
+    },
+    "skinvoice": {
+      "title": "Invoicing application (Skinvoice)",
+      "description": "The project aims to be able to facilitate and manage a company's invoices by automating the required steps as much as possible. (Project in progress)"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "stage3": {
+      "title": "Third year internship",
+      "company": "ProWeb Solutions, Carvin, France",
+      "p1": "This internship is for my third year of a DUT in Computer Science.",
+      "p2": "During this 3-month period, I worked with WordPress, developed Bash scripts, and configured Nginx for deployments.",
+      "tech_title": "Technologies",
+      "tech_desc": "I used WordPress to create and manage content, developed Bash scripts to automate certain tasks, and configured Nginx for efficient deployments.",
+      "benefits_title": "Benefits",
+      "benefits_desc": "I was able to learn WordPress in depth and improve my Bash scripting skills. This internship also allowed me to better understand server management and deployment processes with Nginx."
+    },
+    "stage2": {
+      "title": "Second year internship",
+      "company": "Waigéo, Bruay-la-buissière, France",
+      "p1": "This internship is for my second year of a DUT in Computer Science.",
+      "p2": "During this 2-month period, I implemented various features on both the server and client side on an internal application of the company.",
+      "tech_title": "Technologies",
+      "tech_desc": "The languages ​​used were mainly VueJS for the client side and NodeJS for the server side. I also had the opportunity to work on a JavaScript project with JQuery requests in particular.",
+      "benefits_title": "Benefits",
+      "benefits_desc": "Thanks to this internship, I had the opportunity to learn the VueJS and NodeJS languages ​​in addition to developing my skills in these same languages. I also developed human skills by learning about corporate life in the tech world."
+    },
+    "handler": {
+      "title": "Handler",
+      "company": "Gelkrem, Loison-sous-Lens, France",
+      "p1": "Working on the ice cream line consists of working on an ice cream production line.",
+      "p2": "You may be responsible for monitoring and controlling the operation of the machine, checking the quality of the ice cream produced, loading and unloading raw materials, cleaning and maintaining the machine, and respecting food safety rules.",
+      "conditions_title": "Conditions",
+      "conditions_desc": "Working on the ice cream line can be physical and require standing for long periods. It may also be necessary to work shifts and weekends, depending on the company you work for. The ability to work in a team and to respect safety instructions is also important.",
+      "benefits_title": "Benefits",
+      "benefits_desc": "I learned to be rigorous and to exceed my limits thanks to the demanding working conditions of this profession. I also developed skills in concentration and working under pressure, which has been useful to me in other aspects of my life."
+    }
+  },
+  "footer": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "cv_fr": "Download my CV",
+    "cv_en": "Download my CV in English",
+    "copyright": "All rights reserved - Grégoire Legrand"
+  }
+}
+

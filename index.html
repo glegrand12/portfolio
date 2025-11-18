@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
 
     <title>Portfolio</title>
 </head>
@@ -18,108 +18,520 @@
   <header>
     <nav class="navbar navbar-fixed-top"> 
       <div class="container-fluid">
-        <a id="portfolio_name" class="navbar-brand text-light" href="#">Grégoire Legrand</a>
-      <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" onclick="loadSection('about.html')" href="#about">À PROPOS</a> 
-        
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light"  onclick="loadSection('skills.html')" href="#skills">COMPÉTENCES</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" onclick="loadSection('projects.html')" href="#projects">PROJETS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" onclick="loadSection('experience.html')" href="#experience">Expérience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" onclick="loadSection('contact.html')" href="#contact">Contact</a>
-      </li>
-    </ul>
+        <a id="portfolio_name" class="navbar-brand text-light" href="#" data-i18n="header.name">Grégoire Legrand</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#" data-i18n="nav.home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about" data-i18n="nav.about">À PROPOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#skills" data-i18n="nav.skills">COMPÉTENCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#projects" data-i18n="nav.projects">PROJETS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#experience" data-i18n="nav.experience">Expérience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+          <li class="nav-item language-switcher">
+            <button id="fr-btn" class="btn active">FR</button>
+            <span class="separator">/</span>
+            <button id="en-btn" class="btn">EN</button>
+          </li>
+        </ul>
       </div>
     </nav>
 
 
 
   <div class="portfolio">
-    <p><strong class="center-text">Mon Portfolio </strong></p><br/>
-    <p class="d-none d-sm-block"><strong class="text-bas">Développeur Backend </strong></p>
-  </div> 
+    <p><strong class="center-text" data-i18n="header.title">Mon Portfolio </strong></p><br/>
+    <p class="d-none d-sm-block"><strong class="text-bas" data-i18n="header.subtitle">Développeur Backend </strong></p>
+  </div>
 </header>
 
-<main id="content">
-  <section id="about"></section>
-  <section id="skills"></section>
-  <section id="projects"></section>
-  <section id="experience"></section>
-  <section id="contact"></section>
-</main>
+
+<section id="about" class="p-5 text-center" style="background-color: #efeded;">
+  <div data-aos="fade-up"
+    data-aos-duration="2000">
+
+  <h1 data-i18n="about.title">A PROPOS</h1>
+    <div class="row mt-5 mb-5">
+      <div class="card border border-0 m-auto" style="background-color: #efeded; max-width: 850px">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="./assets/images/profil.jpg" class="rounded img-fluid mt-4" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-justify">
+              <p class="text-start fs-5" ><span data-i18n="about.p1_start"></span><span id="age"></span><span data-i18n="about.p1_end"></span></p>
+              <p class="text-start fs-5" data-i18n="about.p2">Mon objectif est de devenir développeur web et j'ai hâte de me lancer dans cette carrière passionnante. J'aime apprendre de nouvelles technologies. Je suis capable de travailler efficacement en équipe.</p>
+              <p class="text-start fs-5" data-i18n="about.p3">Je suis impatient de développer mes compétences en tant que développeur web et de créer des choses qui seront utilisées par des millions de personnes à travers le monde.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="p-5 text-center" style="background-color: #f4e6e6;">
+  <div data-aos="fade-up"
+     data-aos-duration="1500">
+
+  <h1 data-i18n="skills.title">COMPÉTENCES</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/laravel.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.laravel">Laravel</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/symfony-logo.png" class="card-img-top m-auto mt-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.symfony">Symfony</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/wordpress.png" id="" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.wordpress">Wordpress</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col"> 
+      <div class="card h-100">
+        <img src="./assets/images/logos/boostrap.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.bootstrap">BOOSTRAP</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/react.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.react">React</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/java.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.java">JAVA</h5>
+          </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/vue.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.vue">Vue</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/angular.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.angular">Angular</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/node.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" data-i18n="skills.node">Node</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="projects" class="p-5 text-center" style="background-color: #efeded;">
+  <div data-aos="fade-up"
+  data-aos-duration="2000">
+
+  <h1 data-i18n="projects.title">MES PROJETS</h1>
+  <div class="row m-auto" style="max-width: 900px">
+    <h3 class="mt-5 text-start" data-i18n="projects.school_projects">Projets réalisés pour les études</h3>
+    <div class="accordion mt-3">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <strong data-i18n="projects.fractals.title">Projet Fractales <span class="badge bg-danger ms-2">JAVA</span></strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.fractals.description">
+            Pour ce projet de groupe, le but est de realiser des images complexes a l'aide d'algorithme créant une image infini.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong data-i18n="projects.space_invader.title">Projet Space Invader <span class="badge bg-danger ms-2">JAVA</span></strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.space_invader.description">
+            Dans ce projet effectué en groupe, nous avons recréer le jeu du space invader
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong data-i18n="projects.pokemon.title">Projet Pokémon <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.pokemon.description">
+            Ce projet a été fait afin de voir et comprendre les bases du framework laravel
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <strong data-i18n="projects.ludotech.title">Projet Ludo-tech <span class="badge bg-primary ms-2">LARAVEL</span>  <span class="badge bg-warning ms-2">ANGULAR</span>  <span class="badge bg-primary ms-2">KOTLIN</span> </strong>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.ludotech.description">
+            Ce projet a été réalisé dans le but de pouvoir afficher et présenter aux utilisateurs une liste de jeux avec beaucoup de fontionnalités
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Personnal project -->
+  <div class="row m-auto mb-5" style="max-width: 900px">
+    <h3 class="mt-5 pt-4 text-start" data-i18n="projects.personal_projects">Projets personnel</h3>
+    <div class="accordion mt-3">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOnePerso">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePerso" aria-expanded="true" aria-controls="collapseOnePerso">
+          <strong data-i18n="projects.angular_project.title">Projet angular <span class="badge bg-warning ms-2">ANGULAR</span></strong>
+          </button>
+        </h2>
+        <div id="collapseOnePerso" class="accordion-collapse collapse show" aria-labelledby="headingOnePerso" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.angular_project.description">
+            Ce projet fait avec la doc Angular a pour but d'apprendre les bases du framework
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwoPerso">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPerso" aria-expanded="false" aria-controls="collapseTwoPerso">
+            <strong data-i18n="projects.cake_project.title">Projet site de gateaux <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseTwoPerso" class="accordion-collapse collapse" aria-labelledby="headingTwoPerso" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.cake_project.description">
+            Ce projet est la création d'un site de gateaux où toutes les recettes patissières connus y seront notés. (Ce projet est toujours en cours.)
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThreePerso">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePerso" aria-expanded="false" aria-controls="collapseThreePerso">
+            <strong data-i18n="projects.gelkrem_project.title">Projet Gelkrem <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseThreePerso" class="accordion-collapse collapse" aria-labelledby="headingThreePerso" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.gelkrem_project.description">
+            Le but de ce projet est de proposer une refonte du site Gelkrem avec plusieurs fonctionnalités en plus. (Ce projet est encore en cours.)
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFourPerso">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourPerso" aria-expanded="false" aria-controls="collapseFourPerso">
+            <strong data-i18n="projects.todo_list.title">TODO liste <span class="badge bg-success ms-2">Vue</span></strong>
+          </button>
+        </h2>
+        <div id="collapseFourPerso" class="accordion-collapse collapse" aria-labelledby="headingFourPerso" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.todo_list.description">
+              Le projet présente une simple Todo liste où il est possible de créer,supprimer,modifier une tâche.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFivePerso">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFivePerso" aria-expanded="false" aria-controls="collapseFivePerso">
+            <strong data-i18n="projects.skinvoice.title">Appplication de Facturation(Skinvoice) <span class="badge bg-dark ms-2">Symfony</span><span class="badge bg-info ms-2">React</span></strong>
+          </button>
+        </h2>
+        <div id="collapseFivePerso" class="accordion-collapse collapse" aria-labelledby="headingFivePerso" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start" data-i18n="projects.skinvoice.description">
+              Le projet vise à pouvoir faciliter et gérer les factures d'une entreprise en automatisant un maximum les étapes requises. (Projet en cours)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="experience" class="p-5 text-center" style="background-color: #f4e6e6;">
+  <div data-aos="fade-up" data-aos-duration="2000">
+    <h1 class="text-uppercase" data-i18n="experience.title">Expérience</h1>
+    <div class="card m-auto mt-5 border border-0" style="max-width: 1200px; background-color: #f4e6e6;">
+      
+      <!-- Stage de troisième année -->
+      <div class="row g-0 mb-4">
+        <div class="col-md-6">
+          <div class="card-body text-start">
+            <h4 data-i18n="experience.stage3.title">Stage de troisième année</h4>
+            <p data-i18n="experience.stage3.company">ProWeb Solutions, Carvin, France</p>
+            <p data-i18n="experience.stage3.p1">Ce stage intervient pour ma troisième année de BUT Informatique.</p>
+            <p data-i18n="experience.stage3.p2">Durant cette période de 3 mois, j'ai travaillé avec WordPress, élaboré des scripts Bash, et configuré Nginx pour les déploiements.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" data-i18n="experience.stage3.tech_title">
+                    Technologies
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample1">
+                  <div class="accordion-body text-start">
+                    <p data-i18n="experience.stage3.tech_desc">J'ai utilisé WordPress pour créer et gérer du contenu, élaboré des scripts Bash pour automatiser certaines tâches, et configuré Nginx pour des déploiements efficaces.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" data-i18n="experience.stage3.benefits_title">
+                    Bénéfices
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample1">
+                  <div class="accordion-body text-start">
+                    <p data-i18n="experience.stage3.benefits_desc">J'ai pu apprendre WordPress en profondeur et améliorer mes compétences en script Bash. Ce stage m'a également permis de mieux comprendre la gestion de serveurs et les processus de déploiement avec Nginx.</p>
+                  </div>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+      
+     <!-- Stage de deuxième année -->
+<div class="row g-0 mb-4">
+  <div class="col-md-6">
+    <div class="card-body text-start">
+      <h4 data-i18n="experience.stage2.title">Stage de deuxième année</h4>
+      <p data-i18n="experience.stage2.company">Waigéo, Bruay-la-buissière, France</p>
+      <p data-i18n="experience.stage2.p1">Ce stage intervient pour ma deuxième année de BUT Informatique.</p>
+      <p data-i18n="experience.stage2.p2">Durant cette période de 2 mois, j'ai mis en place diverses fonctionnalités aussi bien du côté serveur que côté client sur une application interne à l'entreprise.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card-body">
+      <!-- Accordion Stage de deuxième année (indépendant) -->
+      <div class="accordion accordion-flush" id="accordionStageDeuxiemeAnnee">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" data-i18n="experience.stage2.tech_title">
+              Technologies
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+            <div class="accordion-body text-start">
+              <p data-i18n="experience.stage2.tech_desc">Les langages utilisés étaient principalement VueJS pour le côté client et NodeJS pour le côté serveur. J'ai aussi eu l'occasion de travailler sur un projet JavaScript avec notamment des requêtes JQuery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" data-i18n="experience.stage2.benefits_title">
+              Bénéfices
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+            <div class="accordion-body text-start">
+              <p data-i18n="experience.stage2.benefits_desc">Grâce à ce stage, j'ai eu l'occasion d'apprendre les langages VueJS et NodeJS en plus de développer mes compétences dans ces mêmes langages. J'ai également développé des compétences humaines en apprenant la vie en entreprise dans le monde de la tech.</p>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>
+</div>
+
+<!-- Manutentionnaire -->
+<div class="row g-0 mb-4">
+  <div class="col-md-6">
+    <div class="card-body text-start">
+      <h4 data-i18n="experience.handler.title">Manutentionnaire</h4>
+      <p data-i18n="experience.handler.company">Gelkrem, Loison-sous-Lens, France</p>
+      <p data-i18n="experience.handler.p1">Le travail à la chaîne de glace consiste à travailler sur une chaîne de production de glace.</p>
+      <p data-i18n="experience.handler.p2">Vous pouvez être chargé de surveiller et de contrôler le fonctionnement de la machine, de vérifier la qualité de la glace produite, de charger et de décharger les matières premières, de nettoyer et d'entretenir la machine, et de respecter les règles de sécurité alimentaire.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card-body">
+      <!-- Accordion Manutentionnaire (indépendant) -->
+      <div class="accordion accordion-flush" id="accordionManutentionnaire">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneManut" aria-expanded="false" aria-controls="flush-collapseOneManut" data-i18n="experience.handler.conditions_title">
+              Conditions
+            </button>
+          </h2>
+          <div id="flush-collapseOneManut" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+            <div class="accordion-body text-start">
+              <p data-i18n="experience.handler.conditions_desc">Le travail à la chaîne de glace peut être physique et exiger de rester debout pendant de longues périodes. Il peut également être nécessaire de travailler en horaires décalés et les week-ends, en fonction de l'entreprise pour laquelle vous travaillez. La capacité à travailler en équipe et à respecter les consignes de sécurité est également importante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoManut" aria-expanded="false" aria-controls="flush-collapseTwoManut" data-i18n="experience.handler.benefits_title">
+              Bénéfices
+            </button>
+          </h2>
+          <div id="flush-collapseTwoManut" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+            <div class="accordion-body text-start">
+              <p data-i18n="experience.handler.benefits_desc">J'ai appris à être rigoureux et à dépasser mes limites grâce aux conditions de travail exigeantes de ce métier. J'ai également développé des compétences en matière de concentration et de travail sous pression, ce qui m'a été utile dans d'autres aspects de ma vie.</p>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</section>
+
 
 
 <footer>
 
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+      <a class="nav-link text-light" aria-current="page" href="#" data-i18n="footer.home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" href="#about">À propos</a>
+      <a class="nav-link text-light" href="#about" data-i18n="footer.about">À propos</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" href="#skills">Compétences</a>
+      <a class="nav-link text-light" href="#skills" data-i18n="footer.skills">Compétences</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" href="#projects">projets</a>
+      <a class="nav-link text-light" href="#projects" data-i18n="footer.projects">projets</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" href="#experience">Expérience</a>
+      <a class="nav-link text-light" href="#experience" data-i18n="footer.experience">Expérience</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" href="#contact">Contact</a>
+      <a class="nav-link text-light" href="#contact" data-i18n="footer.contact">Contact</a>
     </li>
   </ul>
   
-  <li><a href="./assets/documents/cv_fr.pdf" target="_blank" class="text-light">Télécharger mon CV</a></li>
-  <li><a href="./assets/documents/cv_en.pdf" target="_blank" class="text-light">Télécharger mon CV en anglais</a></li>
-  
-  
-  
-  <p id="copy" class="text-center mb-0">Copyright © 2024 All rights reserved - Grégoire Legrand</p>
-  
+  <ul class="nav justify-content-center mt-3">
+    <li class="nav-item"><a href="./assets/documents/cv_fr.pdf" target="_blank" class="nav-link text-light" data-i18n="footer.cv_fr">Télécharger mon CV</a></li>
+    <li class="nav-item"><a href="./assets/documents/gregoire-legrand-resume-internship.pdf" target="_blank" class="nav-link text-light" data-i18n="footer.cv_en">Télécharger mon CV en anglais</a></li>
+  </ul>
+
+  <p id="copy" class="text-center mb-0" >Copyright © <span id="year"></span> <span data-i18n="footer.copyright"></span></p>
+
 </footer>
 
 
 
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/i18next.min.js"></script>
+  <script src="./assets/js/i18nextHttpBackend.min.js"></script>
+  <script src="./assets/js/i18nextBrowserLanguageDetector.min.js"></script>
   <script>
     AOS.init();
-    function loadAllSections() {
-            const sections = [
-                { file: 'about.html', id: 'about' },
-                { file: 'skills.html', id: 'skills' },
-                { file: 'experience.html', id: 'experience' },
-                { file: 'projects.html', id: 'projects' },
-                { file: 'contact.html', id: 'contact' }
-            ];
 
-            const fetchPromises = sections.map(section => 
-                fetch(section.file).then(response => response.text())
-            );
+    const updateContent = () => {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        el.innerHTML = i18next.t(key);
+      });
+    };
 
-            Promise.all(fetchPromises)
-                .then(contents => {
-                    contents.forEach((content, index) => {
-                        document.getElementById(sections[index].id).innerHTML = content;
-                    });
-                })
-                .catch(error => console.error('Erreur de chargement :', error));
-        }
-      document.addEventListener("DOMContentLoaded", loadAllSections);
+    i18next
+      .use(i18nextHttpBackend)
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        fallbackLng: 'fr',
+        debug: true,
+        backend: {
+          loadPath: '/locales/{{lng}}/{{ns}}.json',
+        },
+      }, (err) => {
+        if (err) return console.error(err);
+        updateContent();
+      });
+
+    i18next.on('languageChanged', () => {
+      updateContent();
+    });
+
+    document.getElementById('fr-btn').addEventListener('click', () => {
+      i18next.changeLanguage('fr');
+      document.getElementById('fr-btn').classList.add('active');
+      document.getElementById('en-btn').classList.remove('active');
+    });
+
+    document.getElementById('en-btn').addEventListener('click', () => {
+      i18next.changeLanguage('en');
+      document.getElementById('en-btn').classList.add('active');
+      document.getElementById('fr-btn').classList.remove('active');
+    });
+
+    // Age and year update
+    const birthDate = new Date('2003-05-31');
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    document.getElementById('age').textContent = age;
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
