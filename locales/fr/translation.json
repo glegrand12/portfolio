@@ -105,6 +105,20 @@
       "benefits_desc": "J'ai appris à être rigoureux et à dépasser mes limites grâce aux conditions de travail exigeantes de ce métier. J'ai également développé des compétences en matière de concentration et de travail sous pression, ce qui m'a été utile dans d'autres aspects de ma vie."
     }
   },
+  "contact": {
+    "title": "Contact",
+    "info_title": "Informations de contact",
+    "email_label": "Email",
+    "phone_label": "Téléphone",
+    "location_label": "Localisation",
+    "location_value": "Hauts-de-France, France",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Votre message",
+      "submit": "Envoyer"
+    }
+  },
   "footer": {
     "home": "Home",
     "about": "À propos",

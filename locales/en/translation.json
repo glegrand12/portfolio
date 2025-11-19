@@ -105,6 +105,20 @@
       "benefits_desc": "I learned to be rigorous and to exceed my limits thanks to the demanding working conditions of this profession. I also developed skills in concentration and working under pressure, which has been useful to me in other aspects of my life."
     }
   },
+  "contact": {
+    "title": "Contact",
+    "info_title": "Contact information",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "location_value": "Hauts-de-France, France",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send"
+    }
+  },
   "footer": {
     "home": "Home",
     "about": "About",
